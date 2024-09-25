@@ -2,7 +2,7 @@
 
 This code implemented an iterator for the Orders the Restaurant got. It's a new class where every one of the possible attributes were taken into account. Here is the result:
 
-```
+``` python
 class OrderIterator:
     def __init__(self, order):
         self._order = order
@@ -34,7 +34,7 @@ class OrderIterator:
 
 This returns "None" for attributes that don't exist. Wanna try it? Run this on your terminal:
 
-```
+``` python
 class MenuItem:
     def __init__(self, name:str, price:float, temperature:str, vegetarian_friendly:bool, diabetic_friendly:bool, gluten_free:bool):
         self.name = name
