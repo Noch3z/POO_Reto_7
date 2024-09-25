@@ -236,14 +236,13 @@ class OrderIterator:
 water = Beverage(name="Water", price=1500, size="small")
 bandeja_paisa = Entree(name="Bandeja paisa", price=13000, cuisine_type="colombian")
 cake = Dessert(name="just cake", price=5000, is_sweet=True)
-
-
 new_order = Order([water])
+new_order.add_to_order(cake, 2)
+
 new_order.print_order()
 new_order.add_to_order(bandeja_paisa, 3)
 new_order.print_order()
 print(new_order.calculate_total_price())
-
 
 order_iterator = OrderIterator(new_order.order)
 for item in order_iterator:
